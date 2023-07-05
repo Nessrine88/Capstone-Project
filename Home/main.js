@@ -42,8 +42,7 @@ function toggleMenu() {
 menuBar.addEventListener('click', toggleMenu);
 closeBtn.addEventListener('click', toggleMenu);
 
-
-//see less person section
+// see less person section
 
 const more = document.getElementById('more');
 const imElements = document.querySelectorAll('.im');
@@ -66,6 +65,3 @@ less.addEventListener('click', () => {
     }
   });
 });
-
-
-
