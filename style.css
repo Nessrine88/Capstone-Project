@@ -21,13 +21,20 @@ section {
   width: 100%;
 }
 
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
 .logo img {
-  margin-left: 40px;
-  width: 150px;
+  
+  width: 100px;
   color: #fff;
   margin-top: 0;
 }
-
+.person  {
+  margin-top: 20px;
+}
 .person img {
   width: 100px;
   margin: 10px 20px;
@@ -67,17 +74,20 @@ section {
 .menu {
   clear: left;
   display: flex;
-  padding: 6px 122px 6px 23px;
+  justify-content: center;
   align-items: center;
-  gap: 69px;
+ 
   background: #fff;
   box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
   width: auto;
   overflow: hidden;
+ 
 }
 
 #menuBar {
   cursor: pointer;
+  position: relative;
+  right: 100px;
 }
 
 #menuList {
@@ -88,14 +98,15 @@ section {
 
 .section1 {
   display: flex;
-  height: 100%;
+
   justify-content: center;
   flex-direction: column;
   width: 100%;
+  
 }
 
 main {
-  background-image: url(images/hero-bg-desktop.png);
+  background-image: url(images/bg.PNG);
   background-size: cover;
   background-repeat: no-repeat;
   height: 95vh;
@@ -105,7 +116,7 @@ main {
   color: #ff5438;
   text-align: left;
   font-weight: 500;
-  margin-top: 30px;
+  margin-top: 10%;
   font-size: 18px;
 }
 
@@ -115,6 +126,9 @@ p.paraSection1 {
   padding: 15px;
   background-color: #f8f7f7;
   width: auto;
+  font-family: 'Lato', sans-serif;
+  line-height: 2;
+  
 }
 
 .clipped-text {
@@ -125,8 +139,9 @@ p.paraSection1 {
   background-position: center;
   background-size: cover;
   line-height: 1;
-  font-size: 3.6rem;
+  font-size: 4rem;
   font-weight: 900;
+ 
 }
 
 /* Section 2 */
@@ -153,8 +168,27 @@ p.paraSection1 {
 .prog {
   display: flex;
   align-items: center;
+  justify-content: space-around;
+  transition: all 0.3s;
+  width: 100%;
+}
+.prog a {
+  color: #d3d3d3;
+  font-weight: 700;
+  transition: all 0.3s;
 }
 
+.prog a:hover {
+ padding: 0 30px;
+}
+
+.c1,
+.c2,
+.c3,
+.c4,
+.c5:hover {
+ size: 50px;
+}
 .prog h2 {
   color: #ff5438;
   font-size: 14.271px;
@@ -251,7 +285,7 @@ p.paraSection1 {
   width: 30px;
   height: 2px;
   background: #a04038;
-  margin-bottom: 30px;
+  margin: 10px;
 }
 
 .line2 {
@@ -285,15 +319,15 @@ p.paraSection1 {
   display: none;
   cursor: pointer;
   position: fixed;
-  background-color: rgb(255, 255, 255, 0.75);
+  background-color: rgb(255, 255, 255);
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  overflow-y: scroll;
 }
 
 .menuListmob li {
-  margin-bottom: 10px;
-  margin-top: 10px;
-  background-color: #373737;
+  margin: 10px;
+  background-color:#d3d3d3;
   padding: 20px;
   font-size: 20px;
   border-radius: 10px;
@@ -301,7 +335,7 @@ p.paraSection1 {
 }
 
 .menuListmob a {
-  color: #fff;
+  color: #272a31;
   font-weight: 900;
   font-family: 'Lato', sans-serif;
   text-align: center;
@@ -317,11 +351,14 @@ p.paraSection1 {
 
 #closeBtn {
   cursor: pointer;
+  position: relative;
+  right: 150px;
+  padding: 20px;
 }
 
 #closeBtn img {
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   padding: 10px;
 }
 
@@ -401,6 +438,7 @@ p.paraSection1 {
 
   .menu ul {
     display: flex;
+   
   }
 
   #menuBar img {
@@ -421,6 +459,7 @@ p.paraSection1 {
 
   .prog {
     flex-direction: column;
+    justify-content: space-between;
   }
 
   .speakers {
@@ -464,4 +503,16 @@ p.paraSection1 {
   .im {
     display: flex;
   }
+  .clipped-text {
+    width: 50%;
+  }
+  p.paraSection1 {
+    width: 50%;
+  
+  }
+  .section1 {
+    text-align: left;
+  }
+
+
 }

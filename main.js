@@ -19,6 +19,11 @@ div.innerHTML = `
     <li><a href="#">News</a></li>
     <li><a href="#">CC Campaign</a></li>
   </ul>
+
+  <div class="logo"><img src="images/White And Black Modern Abstract Beauty Logo.png" alt="logo" ></div>
+  <div id="menuList">
+
+
 `;
 header.appendChild(div);
 
