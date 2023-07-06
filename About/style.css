@@ -8,11 +8,14 @@
 
 .logo {
   display: flex;
-  text-align: center;
+  justify-content: center;
 }
 
 .logo img {
-  height: 50px;
+  
+  width: 100px;
+  color: #fff;
+  margin-top: 0;
 }
 
 h1,
@@ -25,21 +28,28 @@ p {
 .menu {
   clear: left;
   display: flex;
-  padding: 6px 122px 6px 23px;
+  justify-content: center;
   align-items: center;
-  gap: 69px;
+ 
   background: #fff;
   box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
   width: auto;
+  overflow: hidden;
+ 
 }
 
 #menuBar {
   cursor: pointer;
+  position: relative;
+  right: 100px;
 }
 
 #menuList {
   display: none;
+  overflow: hidden;
+  padding: 10px;
 }
+
 
 section {
   display: flex;
@@ -47,15 +57,27 @@ section {
   align-items: center;
   text-align: center;
   padding: 20px;
+  height: 100%;
   overflow: hidden;
 }
 
+
+
 .section1 h1 {
   color: #ff4f38;
+  font-family: 'lato', sans-serif;
+  background-position: center;
+  background-size: cover;
+  line-height: 1;
+  font-size: 4rem;
   font-weight: 900;
-  font-size: 50px;
-  margin-bottom: 20px;
+  margin: 20px;
+  
+
+  display: flex;
 }
+
+
 
 .header2 {
   color: #ff4f38;
@@ -74,6 +96,8 @@ section {
   font-weight: 400;
   line-height: 25px;
   letter-spacing: -0.84px;
+ 
+  margin: 20px;
 }
 
 .para2Section1 {
@@ -86,6 +110,8 @@ section {
   line-height: 25px;
   background-color: #f9f8f8;
   padding: 20px;
+ 
+
 }
 
 .sp1 {
@@ -98,7 +124,8 @@ section {
   line-height: 25px;
   letter-spacing: 0.24px;
   text-decoration-line: underline;
-  margin-top: 5px;
+ padding: 20px;
+ 
 }
 
 .S2header2 {
@@ -141,6 +168,7 @@ section {
   line-height: 28px;
   letter-spacing: -0.4px;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .S3para {
@@ -161,12 +189,16 @@ section {
 }
 
 .img2019 {
-  background-image: url('images/cactus.jpg');
+ width: max-content;
+
+  background-position: center;
+  background-image: url('images/winner1.jpeg');
 }
 
 .img2021 {
-  background-image: url('images/reviwe.jpg');
-  background-size: cover;
+  width: max-content;
+  background-image: url('images/winner2.jpg');
+ 
   background-position: center;
 }
 
@@ -182,9 +214,9 @@ section {
 
 .transparentbg {
   background-color: rgba(65, 64, 64, 0.5);
-  width: 100%;
-  height: inherit;
-  padding: 100px 50px;
+ height: 50%;
+  
+  width: 50%;
 }
 
 .partnerLogo img {
@@ -225,9 +257,10 @@ h4 {
   display: none;
   cursor: pointer;
   position: fixed;
-  background-color: rgb(255, 255, 255, 0.75);
+  background-color: rgb(255, 255, 255);
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  overflow-y: scroll;
 }
 
 .menuListmob li {
@@ -254,14 +287,113 @@ h4 {
   background-color: #858282;
   color: #f48d7b;
 }
+#menuList a:hover {
+  color: #ec5242;
+}
 
 #closeBtn {
   cursor: pointer;
+  position: relative;
+  right: 150px;
+  padding: 20px;
 }
 
 #closeBtn img {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+}
+.background {
+  display: none;
+}
+
+.background li a img {
+  height: 18px;
+  width: 9px;
+}
+
+.backgrounList {
+  margin-right: 50px;
+}
+
+.backgrounList li {
+  float: left;
+  margin-left: 20px;
+  display: none;
+  overflow-x: hidden;
+  font-size: 18px;
+}
+
+.backgroundMenu {
+  margin-right: 40px;
+}
+
+.partnerLogo img {
+  margin: 20px;
+}
+
+.partnerHeader {
+  color: #272a31;
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.2px;
+}
+
+.partnerLogo {
+  background-color: #d3d3d3;
+  margin: 0;
+  padding: 25px;
+  width: 100%;
+}
+
+
+.footer {
+  display: flex;
+padding: 20px;
+  align-items: center;
+  justify-content: center;
+}
+  
+
+
+h4 {
+ 
+text-align: left;
+margin-left: 20px;
+}
+
+.foopara {
+  display: none;
+}
+
+.section4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+.partnerLogo img {
+  width: 100px;
+  height: 100px;
+}
+.prog img {
+  width: 80px;
+  height: 80px;
+}
+#line3 {
   width: 30px;
-  height: 30px;
+  height: 2px;
+  background: #a04038;
+  margin: 10px;
+  align-items: center;
+}
+
+.now {
+  width: 50px;
+  
 }
 
 @media (min-width: 768px) {
@@ -287,36 +419,50 @@ h4 {
 
   #menuList {
     display: flex;
+    margin-left: 100px;
   }
 
   #menuList li {
     float: left;
-    margin-right: 20px;
-    margin-left: 40px;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
   }
 
   #menuList a {
-    color: #868686;
-    font-size: 14px;
+    color: #2b2b2b;
+    font-size: 18px;
     font-family: 'Lato', sans-serif;
     font-style: normal;
-    font-weight: 800;
+    font-weight: 400;
     line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #menuList a:hover {
+    color: #ec5242;
   }
 
   .menu {
     clear: left;
     display: flex;
-    position: fixed;
     width: 100%;
-    align-items: center;
-    gap: 100px;
+    font-family: 'Lato', sans-serif;
     background: #fff;
+    justify-content: center;
     box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
-    padding: 10px;
-    justify-content: space-around;
   }
 
+  .menu ul {
+    display: flex;
+   justify-content: center;
+  }
+
+  #menuBar img {
+    display: none;
+  }
   #menuBar {
     display: none;
   }
@@ -325,5 +471,35 @@ h4 {
     border: 5px solid #ec4327;
     padding: 10px;
     color: #ec4327;
+    margin-left: 40px;
+  }
+  .background {
+    overflow: hidden;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0 5px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: rgb(192, 192, 192);
+    background-color: #373737;
+  }
+  .backgrounList li {
+    float: left;
+    margin-left: 20px;
+    overflow-x: hidden;
+    display: flex;
+    padding-top: 10px;
+  }
+
+  .backgrounList a {
+    color: rgb(192, 192, 192);
+    padding-bottom: 8px;
+    font-family: 'Lato', sans-serif;
+  }
+  .section1 {
+    margin: 0 200px;
   }
 }

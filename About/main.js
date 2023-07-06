@@ -19,6 +19,8 @@ div.innerHTML = `
     <li><a href="#">News</a></li>
     <li><a href="#">CC Campaign</a></li>
   </ul>
+  <div class="logo"><a href ="https://nessrine88.github.io/Capstone-Project/"></a><img src="images/White And Black Modern Abstract Beauty Logo.png" alt="logo" ></a></div>
+  <div id="menuList">
 `;
 header.appendChild(div);
 
