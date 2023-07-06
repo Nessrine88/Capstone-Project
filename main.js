@@ -84,7 +84,7 @@ const programs = [
   {
     icon: 'images/workshop.png',
     title: 'Spa and Relaxation:',
-    description: ' Create a spa-like atmosphere where attendees can indulge in rejuvenating treatments featuring prickly pear seeds oil. This could include facial treatments, body massages, and pampering sessions using products infused with the oil' / 's nourishing properties.',
+    description: ' Create a spa-like atmosphere where attendees can indulge in rejuvenating treatments featuring prickly pear seeds oil. This could include facial treatments, body massages, and pampering sessions using products infused with the oil is nourishing properties.',
   },
 
   {
@@ -96,7 +96,7 @@ const programs = [
   {
     icon: 'images/workshop.png',
     title: 'Product Showcase:',
-    description: ' Set up a dedicated area to showcase the company' / 's range of skincare and wellness products. Allow attendees to sample and purchase products, providing them with an opportunity to experience the luxurious qualities of prickly pear seeds oil firsthand.',
+    description: ' Set up a dedicated area to showcase the company is range of skincare and wellness products. Allow attendees to sample and purchase products, providing them with an opportunity to experience the luxurious qualities of prickly pear seeds oil firsthand.',
   },
 
   {
