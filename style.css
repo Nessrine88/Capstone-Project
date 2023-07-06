@@ -80,7 +80,6 @@ section {
   float: left;
   margin-left: 20px;
   display: none;
-  overflow-x: hidden;
   font-size: 18px;
 }
 
@@ -95,8 +94,7 @@ section {
   align-items: center;
   background: #fff;
   box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
-  width: auto;
-  overflow: hidden;
+  width: 100%;
 }
 
 #menuBar {
@@ -107,7 +105,6 @@ section {
 
 #menuList {
   display: none;
-  overflow: hidden;
   padding: 10px;
 }
 
@@ -123,6 +120,7 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
   height: 95vh;
+  overflow-x: hidden;
 }
 
 .h1span {
@@ -138,7 +136,7 @@ p.paraSection1 {
   margin: 50px 0;
   padding: 15px;
   background-color: #f8f7f7;
-  width: auto;
+  width: 100%;
   font-family: 'Lato', sans-serif;
   line-height: 2;
 }
@@ -365,7 +363,7 @@ p.paraSection1 {
   border-radius: 4px;
   border: 1px solid #dcdcdc;
   box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.25);
-  width: auto;
+  width: 100%;
   cursor: pointer;
 }
 
@@ -434,7 +432,6 @@ p.paraSection1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: hidden;
 }
 
 .footer {
@@ -482,7 +479,6 @@ p.paraSection1 {
   justify-content: center;
   align-items: center;
   z-index: 9999;
-  overflow: hidden;
 }
 
 .popup-content {
@@ -550,7 +546,6 @@ p.paraSection1 {
   .backgrounList li {
     float: left;
     margin-left: 20px;
-    overflow-x: hidden;
     display: flex;
     padding-top: 10px;
   }
@@ -630,7 +625,6 @@ p.paraSection1 {
   }
 
   .background {
-    overflow: hidden;
     display: flex;
     justify-content: end;
     align-items: center;
