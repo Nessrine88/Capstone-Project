@@ -12,6 +12,10 @@
   height: 100px;
 }
 
+#tweeter {
+  width: 20px;
+}
+
 .logo {
   display: flex;
   justify-content: center;
