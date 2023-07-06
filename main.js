@@ -11,8 +11,8 @@ div.innerHTML = `
     </div>
   </div>
   <ul>
-  <li><a href="http://127.0.0.1:3000/Home/index.html">Home</a></li>
-    <li><a href="https://nessrine88.github.io/Capstone-Project/">About</a></li>
+  
+    <li><a href="html1.index/">About</a></li>
     <li><a href="#">Program</a></li>
     <li><a href="#">Join</a></li>
     <li><a href="#">Sponsor</a></li>
