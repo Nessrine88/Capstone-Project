@@ -19,11 +19,6 @@ div.innerHTML = `
     <li><a href="#">News</a></li>
     <li><a href="#">CC Campaign</a></li>
   </ul>
-
-  <div class="logo"><a href ="https://nessrine88.github.io/Capstone-Project/"></a><img src="images/White And Black Modern Abstract Beauty Logo.png" alt="logo" ></a></div>
-  <div id="menuList">
-
-
 `;
 header.appendChild(div);
 
@@ -46,27 +41,3 @@ function toggleMenu() {
 
 menuBar.addEventListener('click', toggleMenu);
 closeBtn.addEventListener('click', toggleMenu);
-
-// see less person section
-
-const more = document.getElementById('more');
-const imElements = document.querySelectorAll('.im');
-const less = document.getElementById('less');
-
-more.addEventListener('click', () => {
-  imElements.forEach((element) => {
-    element.style.display = 'flex';
-  });
-  more.style.display = 'none';
-  less.style.display = 'flex';
-});
-
-less.addEventListener('click', () => {
-  imElements.forEach((element) => {
-    if (element.style.display === 'none') {
-      element.style.display = 'flex';
-    } else {
-      element.style.display = 'none';
-    }
-  });
-});

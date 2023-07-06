@@ -264,11 +264,6 @@ h4 {
   height: 30px;
 }
 
-.prog a {
-  display: flex;
-  justify-content: flex-end;
-}
-
 @media (min-width: 768px) {
   .revieweImgs {
     display: flex;

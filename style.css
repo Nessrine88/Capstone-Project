@@ -16,9 +16,13 @@ section {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 20px;
+  
   overflow: hidden;
   width: 100%;
+}
+.tweeter li a img  {
+ 
+  width: 20px;
 }
 
 .logo {
@@ -34,6 +38,7 @@ section {
 }
 .person  {
   margin-top: 20px;
+  
 }
 .person img {
   width: 100px;
@@ -98,7 +103,7 @@ section {
 
 .section1 {
   display: flex;
-
+ align-items: center;
   justify-content: center;
   flex-direction: column;
   width: 100%;
@@ -114,10 +119,12 @@ main {
 
 .section1 h2 {
   color: #ff5438;
-  text-align: left;
+  
+line-height: 3;
   font-weight: 500;
-  margin-top: 10%;
-  font-size: 18px;
+  margin-top:5% ;
+  font-size: 24px;
+  font-family: 'Lato',sans-serif;
 }
 
 p.paraSection1 {
@@ -179,7 +186,9 @@ p.paraSection1 {
 }
 
 .prog a:hover {
- padding: 0 30px;
+ border: #d3d3d3 1px solid;
+ border-radius: 2px;
+ padding: 3px;
 }
 
 .c1,
@@ -241,6 +250,7 @@ p.paraSection1 {
   flex-direction: column;
   align-items: center;
   padding: 71px 20px;
+  margin-left: 10px;
 }
 
 .section3 h2 {
@@ -255,10 +265,14 @@ p.paraSection1 {
 
 .person {
   display: flex;
+  margin-left: 30px;
+  
 }
 
 .clm2 {
-  justify-content: space-between;
+ text-align: left;
+ width: 50%;
+
 }
 
 .p1 {
@@ -371,6 +385,73 @@ p.paraSection1 {
   cursor: pointer;
 }
 
+.partnerLogo img {
+  margin: 20px;
+}
+
+.partnerHeader {
+  color: #272a31;
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.2px;
+}
+
+.partnerLogo {
+  background-color: #d3d3d3;
+  margin: 0;
+  padding: 25px;
+  width: 100%;
+}
+
+
+.footer {
+  display: flex;
+padding: 20px;
+  align-items: center;
+  justify-content: center;
+}
+  
+
+
+h4 {
+ 
+text-align: left;
+margin-left: 20px;
+}
+
+.foopara {
+  display: none;
+}
+
+.section4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+.partnerLogo img {
+  width: 100px;
+  height: 100px;
+}
+.prog img {
+  width: 80px;
+  height: 80px;
+}
+#line3 {
+  width: 30px;
+  height: 2px;
+  background: #a04038;
+  margin: 10px;
+  align-items: center;
+}
+
+.now {
+  width: 50px;
+  
+}
 @media (min-width: 768px) {
   .revieweImgs {
     display: flex;
@@ -385,6 +466,8 @@ p.paraSection1 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-left: 20px;
+    
   }
 
   .foopara {
@@ -425,6 +508,10 @@ p.paraSection1 {
     font-weight: 400;
     line-height: normal;
     display: flex;
+  }
+
+  #menuList a:hover {
+    color: #ec5242;
   }
 
   .menu {
