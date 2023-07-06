@@ -510,9 +510,12 @@ p.paraSection1 {
   margin-bottom: 20px;
   font-family: 'Lato', sans-serif;
   background-color: #d3d3d3;
-  padding: 20px;
+  padding: 50px ;
   border-radius: 20px;
   margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 3;
 }
 
 .popup-container:hover {
