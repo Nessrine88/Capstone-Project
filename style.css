@@ -123,7 +123,6 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
   height: 95vh;
-  
 }
 
 .h1span {
@@ -167,7 +166,6 @@ p.paraSection1 {
 /* Section 2 */
 
 .section2 {
-  
   margin-top: 20px;
   display: flex;
   flex-direction: column;
@@ -670,7 +668,6 @@ p.paraSection1 {
 
   .section1 {
     text-align: left;
-  
   }
 
   .section1 h2 {
