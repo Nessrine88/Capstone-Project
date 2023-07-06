@@ -12,7 +12,7 @@ div.innerHTML = `
   </div>
   <ul>
   
-    <li><a href="html1.index/">About</a></li>
+    <li><a href="https://nessrine88.github.io/Capstone-Project/about.html">About</a></li>
     <li><a href="#">Program</a></li>
     <li><a href="#">Join</a></li>
     <li><a href="#">Sponsor</a></li>
