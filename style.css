@@ -486,7 +486,17 @@ p.paraSection1 {
   text-align: center;
   border-radius: 10px;
   margin: 10px;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  background-image: url(images/bgimgsect1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
+
 
 .popup-content h2 {
   font-size: 24px;
@@ -499,6 +509,10 @@ p.paraSection1 {
   font-size: 16px;
   margin-bottom: 20px;
   font-family: 'Lato', sans-serif;
+  background-color: #d3d3d3;
+  padding: 20px;
+  border-radius: 20px;
+  margin-top: 10px;
 }
 
 .popup-container:hover {

@@ -76,31 +76,31 @@ less.addEventListener('click', () => {
 // Program data
 const programs = [
   {
-    icon: 'images/workshop.png',
+    icon: 'images/White And Black Modern Abstract Beauty Logo.png',
     title: 'Workshops and Demonstrations',
     description: 'Offer educational sessions and interactive workshops led by skincare experts, nutritionists, and wellness practitioners. Participants can learn about the benefits of prickly pear seeds oil, skincare routines, healthy eating habits, and holistic wellness practices.',
   },
 
   {
-    icon: 'images/workshop.png',
+    icon: 'images/White And Black Modern Abstract Beauty Logo.png',
     title: 'Spa and Relaxation:',
     description: ' Create a spa-like atmosphere where attendees can indulge in rejuvenating treatments featuring prickly pear seeds oil. This could include facial treatments, body massages, and pampering sessions using products infused with the oil is nourishing properties.',
   },
 
   {
-    icon: 'images/workshop.png',
+    icon: 'images/White And Black Modern Abstract Beauty Logo.png',
     title: 'Wellness Activities:',
     description: ' Organize wellness activities such as yoga sessions, meditation workshops, or guided nature walks to promote overall well-being. Highlight the connection between nature, mindfulness, and the power of natural ingredients like prickly pear seeds oil.',
   },
 
   {
-    icon: 'images/workshop.png',
+    icon: 'images/White And Black Modern Abstract Beauty Logo.png',
     title: 'Product Showcase:',
     description: ' Set up a dedicated area to showcase the company is range of skincare and wellness products. Allow attendees to sample and purchase products, providing them with an opportunity to experience the luxurious qualities of prickly pear seeds oil firsthand.',
   },
 
   {
-    icon: 'images/workshop.png',
+    icon: 'images/White And Black Modern Abstract Beauty Logo.png',
     title: 'Expert Panel and Q&A Sessions:',
     description: ' Arrange a panel discussion featuring industry experts, scientists, or influencers who can share insights on skincare, natural beauty, and sustainable practices. Engage attendees in Q&A sessions, allowing them to ask questions and gain valuable knowledge.',
   },
