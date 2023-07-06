@@ -9,6 +9,7 @@
   list-style: none;
   scroll-behavior: smooth;
   cursor: pointer;
+  overflow-x: hidden;
 }
 
 .partnerLogo img {
@@ -167,6 +168,7 @@ p.paraSection1 {
 /* Section 2 */
 
 .section2 {
+  overflow: hidden;
   margin-top: 20px;
   display: flex;
   flex-direction: column;
@@ -435,6 +437,7 @@ p.paraSection1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
 }
 
 .footer {
@@ -482,14 +485,15 @@ p.paraSection1 {
   justify-content: center;
   align-items: center;
   z-index: 9999;
+  overflow: hidden;
 }
 
 .popup-content {
   background-color: #fff;
   padding: 20px;
   text-align: center;
-  max-width: 400px;
   border-radius: 10px;
+  margin: 10px;
 }
 
 .popup-content h2 {
@@ -667,6 +671,7 @@ p.paraSection1 {
 
   .section1 {
     text-align: left;
+    overflow: hidden;
   }
 
   .section1 h2 {
