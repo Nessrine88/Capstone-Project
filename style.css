@@ -9,7 +9,6 @@
   list-style: none;
   scroll-behavior: smooth;
   cursor: pointer;
-  overflow-x: hidden;
 }
 
 .partnerLogo img {
@@ -23,7 +22,6 @@ section {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  overflow: hidden;
   width: 100%;
 }
 
@@ -125,6 +123,7 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
   height: 95vh;
+  
 }
 
 .h1span {
@@ -168,7 +167,7 @@ p.paraSection1 {
 /* Section 2 */
 
 .section2 {
-  overflow: hidden;
+  
   margin-top: 20px;
   display: flex;
   flex-direction: column;
@@ -671,7 +670,7 @@ p.paraSection1 {
 
   .section1 {
     text-align: left;
-    overflow: hidden;
+  
   }
 
   .section1 h2 {
