@@ -497,7 +497,6 @@ p.paraSection1 {
   background-size: cover;
 }
 
-
 .popup-content h2 {
   font-size: 24px;
   margin-bottom: 10px;
@@ -506,11 +505,10 @@ p.paraSection1 {
 }
 
 .popup-content p {
-  font-size: 16px;
   margin-bottom: 20px;
   font-family: 'Lato', sans-serif;
   background-color: #d3d3d3;
-  padding: 50px ;
+  padding: 50px;
   border-radius: 20px;
   margin-top: 10px;
   font-size: 18px;
