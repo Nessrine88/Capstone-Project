@@ -218,7 +218,7 @@ section {
 }
 
 .transparentbg {
-  background-color: rgba(65, 64, 64, 0.5);
+  background-color: rgba(251, 32, 32, 0.5);
   width: 100%;
   height: 100%;
 }
@@ -270,6 +270,7 @@ section {
   text-align: center;
   transition: all 0.3s;
   cursor: pointer;
+  margin-left: 40px;
 }
 
 .menuListmob li:hover {
@@ -309,8 +310,8 @@ section {
   display: none;
 }
 
-.backgrounList {
-  margin-right: 50px;
+.background ul {
+  padding-right: 315px;
 }
 
 .backgroundMenu {

@@ -7,8 +7,11 @@
   text-decoration: none;
   border: none;
   list-style: none;
-  scroll-behavior: smooth;
   cursor: pointer;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 .partnerLogo img {
@@ -44,7 +47,6 @@ section {
 .person {
   margin-top: 20px;
   display: flex;
-  margin-left: 30px;
 }
 
 .person img {
@@ -72,8 +74,8 @@ section {
   width: 9px;
 }
 
-.backgrounList {
-  margin-right: 50px;
+.background ul {
+  padding-right: 115px;
 }
 
 .backgrounList li {
@@ -94,7 +96,6 @@ section {
   align-items: center;
   background: #fff;
   box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
-  width: auto;
 }
 
 #menuBar {
@@ -112,7 +113,7 @@ section {
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 100%;
+  width: auto;
 }
 
 main {
@@ -120,7 +121,6 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
   height: 95vh;
-  overflow-x: hidden;
 }
 
 .h1span {
@@ -153,6 +153,10 @@ p.paraSection1 {
   font-weight: 900;
 }
 
+.pps {
+  color: #565656;
+}
+
 .event {
   margin-bottom: 20px;
   font-family: 'Lato', sans-serif;
@@ -172,7 +176,7 @@ p.paraSection1 {
   background-image: url(images/feature_background.jpg);
 }
 
-.section2 h3 {
+.section2 header {
   color: #fff;
   font-size: 20px;
   font-family: 'Lato', sans-serif;
@@ -202,7 +206,7 @@ p.paraSection1 {
 }
 
 .menuListmob a {
-  color: #272a31;
+  color: #d3d3d3;
   font-weight: 900;
   font-family: 'Lato', sans-serif;
   text-align: center;
@@ -273,12 +277,12 @@ p.paraSection1 {
   margin: 30px 50px;
   justify-content: center;
   align-items: center;
-  background-color: #ff5438;
-  color: #fff;
+  text-decoration: underline;
+  color: #d3d3d3;
   font-size: 16px;
   font-family: 'Lato', sans-serif;
   font-style: normal;
-  font-weight: 900;
+  font-weight: 500;
   line-height: 28px;
   letter-spacing: -0.16px;
   transition: all 0.3s;
@@ -371,14 +375,14 @@ p.paraSection1 {
   display: none;
   cursor: pointer;
   position: fixed;
-  background-color: rgb(255, 255, 255);
+  background-color: #fff;
   width: 100%;
   height: 100vh;
 }
 
 .menuListmob li {
   margin: 10px;
-  background-color: #d3d3d3;
+  background-color: #272a31;
   padding: 20px;
   font-size: 20px;
   border-radius: 10px;
@@ -414,7 +418,7 @@ p.paraSection1 {
 }
 
 .partnerHeader {
-  color: #272a31;
+  color: #d3d3d3;
   font-size: 20px;
   font-family: 'Lato', sans-serif;
   font-style: normal;
@@ -424,7 +428,7 @@ p.paraSection1 {
 }
 
 .partnerLogo {
-  background-color: #d3d3d3;
+  background-color: #272a31;
   margin: 0;
   padding: 25px;
   width: 100%;
@@ -486,11 +490,9 @@ p.paraSection1 {
   text-align: center;
   border-radius: 10px;
   margin: 10px;
-  height: 75vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 50%;
   background-image: url(images/bgimgsect1.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -508,12 +510,11 @@ p.paraSection1 {
   margin-bottom: 20px;
   font-family: 'Lato', sans-serif;
   background-color: #d3d3d3;
-  padding: 50px;
   border-radius: 20px;
   margin-top: 10px;
   font-size: 18px;
   font-weight: bold;
-  line-height: 3;
+  padding: 20px;
 }
 
 .popup-container:hover {
@@ -523,14 +524,23 @@ p.paraSection1 {
 /* Close button styles */
 .close-button {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 30px;
+  right: 30px;
   font-size: 18px;
   cursor: pointer;
   color: #d3d3d3;
 }
 
+.div22 {
+  display: none;
+}
+
 @media (min-width: 768px) {
+  .div22 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
   .revieweImgs {
     display: flex;
     width: 70%;
@@ -539,6 +549,7 @@ p.paraSection1 {
   .partnerLogo img {
     width: 150px;
     height: 100px;
+    color: #d3d3d3;
   }
 
   .award {
@@ -559,7 +570,6 @@ p.paraSection1 {
 
   .backgrounList li {
     float: left;
-    margin-left: 20px;
     display: flex;
     padding-top: 10px;
   }
@@ -589,6 +599,7 @@ p.paraSection1 {
     font-weight: 400;
     line-height: normal;
     display: flex;
+    margin-left: 40px;
   }
 
   #menuList a:hover {
@@ -685,5 +696,10 @@ p.paraSection1 {
     margin-top: 5%;
     font-size: 24px;
     font-family: 'Lato', sans-serif;
+  }
+
+  #less {
+    display: none;
+    cursor: pointer;
   }
 }

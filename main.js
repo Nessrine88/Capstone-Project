@@ -12,7 +12,7 @@ div.innerHTML = `
   </div>
   <ul>
   
-    <li><a href="https://nessrine88.github.io/Capstone-Project/about.html">About</a></li>
+    <li><a href="/.about.html">About</a></li>
     <li><a href="#">Program</a></li>
     <li><a href="#">Join</a></li>
     <li><a href="#">Sponsor</a></li>
@@ -47,60 +47,36 @@ function toggleMenu() {
 menuBar.addEventListener('click', toggleMenu);
 closeBtn.addEventListener('click', toggleMenu);
 
-// see less person section
-
-const more = document.getElementById('more');
-const imElements = document.querySelectorAll('.im');
-const less = document.getElementById('less');
-
-more.addEventListener('click', () => {
-  imElements.forEach((element) => {
-    element.style.display = 'flex';
-  });
-  more.style.display = 'none';
-  less.style.display = 'flex';
-});
-
-less.addEventListener('click', () => {
-  imElements.forEach((element) => {
-    if (element.style.display === 'none') {
-      element.style.display = 'flex';
-    } else {
-      element.style.display = 'none';
-    }
-  });
-});
-
 // popup
 
 // Program data
 const programs = [
   {
-    icon: 'images/White And Black Modern Abstract Beauty Logo.png',
+    icon: 'images/workshop.png',
     title: 'Workshops and Demonstrations',
     description: 'Offer educational sessions and interactive workshops led by skincare experts, nutritionists, and wellness practitioners. Participants can learn about the benefits of prickly pear seeds oil, skincare routines, healthy eating habits, and holistic wellness practices.',
   },
 
   {
-    icon: 'images/White And Black Modern Abstract Beauty Logo.png',
+    icon: 'images/workshop.png',
     title: 'Spa and Relaxation:',
     description: ' Create a spa-like atmosphere where attendees can indulge in rejuvenating treatments featuring prickly pear seeds oil. This could include facial treatments, body massages, and pampering sessions using products infused with the oil is nourishing properties.',
   },
 
   {
-    icon: 'images/White And Black Modern Abstract Beauty Logo.png',
+    icon: 'images/workshop.png',
     title: 'Wellness Activities:',
     description: ' Organize wellness activities such as yoga sessions, meditation workshops, or guided nature walks to promote overall well-being. Highlight the connection between nature, mindfulness, and the power of natural ingredients like prickly pear seeds oil.',
   },
 
   {
-    icon: 'images/White And Black Modern Abstract Beauty Logo.png',
+    icon: 'images/workshop.png',
     title: 'Product Showcase:',
     description: ' Set up a dedicated area to showcase the company is range of skincare and wellness products. Allow attendees to sample and purchase products, providing them with an opportunity to experience the luxurious qualities of prickly pear seeds oil firsthand.',
   },
 
   {
-    icon: 'images/White And Black Modern Abstract Beauty Logo.png',
+    icon: 'images/workshop.png',
     title: 'Expert Panel and Q&A Sessions:',
     description: ' Arrange a panel discussion featuring industry experts, scientists, or influencers who can share insights on skincare, natural beauty, and sustainable practices. Engage attendees in Q&A sessions, allowing them to ask questions and gain valuable knowledge.',
   },
@@ -155,4 +131,78 @@ programElements.forEach((programElement, index) => {
       popupContainer.remove();
     });
   });
+});
+
+// person section
+
+const persons = [
+  {
+    name: 'Santiago',
+    image: 'images/santiago3.jpeg',
+    description: "Manages the company's financial operations, including budgeting, financial planning, and financial reporting.",
+    role: 'Chief Financial Officer (CFO)',
+  },
+  {
+    name: 'Catherine',
+    image: 'images/catherine4.jpeg',
+    description: 'Oversees the day-to-day operations of the company, ensuring efficient and effective processes across various departments.',
+    role: 'Chief Operations Officer (COO)',
+  },
+  {
+    name: 'Stellar',
+    image: 'images/stellar1.jpeg',
+    description: 'Responsible for aligning technology initiatives with business objectives, managing IT infrastructure, and driving digital transformation.',
+    role: 'Chief Technology Officer (CTO)',
+  },
+  {
+    name: 'Houda',
+    image: 'images/houda6.jpg',
+    description: 'Oversees all aspects of human resources, including recruitment, employee relations, training and development, and HR policies.',
+    role: 'Human Resources Director',
+  },
+];
+
+const section3 = document.querySelector('.section3');
+
+const div2 = document.createElement('div');
+div2.classList.add('div22');
+
+div2.innerHTML = `
+  ${persons
+    .map(
+      (person) => `
+      <div class="person">
+        <img class="personImage" src="${person.image}" alt="${person.name}_image">
+        <div class="clm2">
+          <h2 class="name">${person.name}</h2>
+          <p class="p1">${person.description}</p>
+          <div class="line2"></div>
+          <p class="p2">${person.role}</p>
+        </div>
+      </div>
+    `,
+    )
+    .join('')}
+    <div id="less" class="more">
+      LESS
+      <img src="images/arrow_up.png" alt="arrow-icon">
+    </div>
+  </div>
+`;
+
+section3.appendChild(div2);
+
+const more = document.getElementById('more');
+const less = document.getElementById('less');
+
+more.addEventListener('click', () => {
+  div2.style.display = 'block';
+  more.style.display = 'none';
+  less.style.display = 'block';
+});
+
+less.addEventListener('click', () => {
+  div2.style.display = 'none';
+  more.style.display = 'block';
+  less.style.display = 'none';
 });
