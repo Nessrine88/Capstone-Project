@@ -466,7 +466,6 @@ section {
     justify-content: end;
     align-items: center;
     gap: 1.5rem;
-    padding: 0 5px;
     font-size: 16px;
     font-weight: 500;
     margin-bottom: 5px;
@@ -480,5 +479,21 @@ section {
 
   .section2 {
     margin: 0 200px;
+  }
+
+  .backgrounList {
+    float: left;
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+    padding: 10px;
+  }
+
+  .menuList ul {
+    float: left;
+    background-color: #fff;
+    color: #333;
+    margin: 0;
+    padding: 10px;
   }
 }

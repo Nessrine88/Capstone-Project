@@ -137,6 +137,18 @@ programElements.forEach((programElement, index) => {
 
 const persons = [
   {
+    name: 'Peter',
+    image: 'images/peter2.jpg',
+    description: 'Peter, our accomplished CEO, leads with vision and expertise, propelling our company to new heights of success. His strategic acumen and commitment to innovation drive our team to deliver exceptional results.',
+    role: 'Chief Executive Officer (CEO)',
+  },
+  {
+    name: 'Mayssa',
+    image: 'images/mayssa5.webp',
+    description: "Responsible for developing and executing the company's marketing strategies.",
+    role: 'Chief Marketing Officer (CMO)',
+  },
+  {
     name: 'Santiago',
     image: 'images/santiago3.jpeg',
     description: "Manages the company's financial operations, including budgeting, financial planning, and financial reporting.",
@@ -164,45 +176,62 @@ const persons = [
 
 const section3 = document.querySelector('.section3');
 
-const div2 = document.createElement('div');
-div2.classList.add('div22');
+let displayedPersons = persons.slice(0, 5);
 
-div2.innerHTML = `
-  ${persons
+function renderPersons(personsArray) {
+  const htmlContent = `
+    <h2>Founders</h2>
+    <div class="line"></div>
+    <div class="speakers">
+      ${personsArray
     .map(
       (person) => `
-      <div class="person">
-        <img class="personImage" src="${person.image}" alt="${person.name}_image">
-        <div class="clm2">
-          <h2 class="name">${person.name}</h2>
-          <p class="p1">${person.description}</p>
-          <div class="line2"></div>
-          <p class="p2">${person.role}</p>
-        </div>
-      </div>
-    `,
+          <div class="person">
+            <img class="personImage" src="${person.image}" alt="${person.name}_image">
+            <div class="clm2">
+              <h2 class="name">${person.name}</h2>
+              <p class="p1">${person.description}</p>
+              <div class="line2"></div>
+              <p class="p2">${person.role}</p>
+            </div>
+          </div>
+        `,
     )
     .join('')}
-    <div id="less" class="more">
-      LESS
-      <img src="images/arrow_up.png" alt="arrow-icon">
+        <div id="more" class="more">MORE
+        <img src="images/arrow_down 1.png" alt="arrow-icon">
+      </div>
+      <div id="less" class="more" style="display: none;">LESS
+        <img src="images/arrow_up.png" alt="arrow-icon">
+      </div>
     </div>
-  </div>
-`;
+  `;
 
-section3.appendChild(div2);
+  section3.innerHTML = htmlContent;
 
-const more = document.getElementById('more');
-const less = document.getElementById('less');
+  const more = document.getElementById('more');
+  const less = document.getElementById('less');
 
-more.addEventListener('click', () => {
-  div2.style.display = 'block';
-  more.style.display = 'none';
-  less.style.display = 'block';
-});
+  more.addEventListener('click', () => {
+    displayedPersons = persons.slice(0);
+    renderPersons(displayedPersons);
+    more.style.display = 'flex';
+    less.style.display = personsArray.length > 2 ? 'flex' : 'none';
+  });
 
-less.addEventListener('click', () => {
-  div2.style.display = 'none';
-  more.style.display = 'block';
-  less.style.display = 'none';
-});
+  less.addEventListener('click', () => {
+    displayedPersons = persons.slice(0, 2);
+    renderPersons(displayedPersons);
+    console.log('click');
+  });
+}
+
+if (window.innerWidth <= 768) {
+  displayedPersons = persons.slice(0, 2);
+  renderPersons(displayedPersons);
+  console.log('Small screen');
+} else {
+  // Code to execute if the screen width is greater than 768 pixels
+  console.log('Large screen');
+}
+renderPersons(displayedPersons);

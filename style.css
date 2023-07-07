@@ -176,7 +176,7 @@ p.paraSection1 {
   background-image: url(images/feature_background.jpg);
 }
 
-.section2 header {
+.section2 h2 {
   color: #fff;
   font-size: 20px;
   font-family: 'Lato', sans-serif;
@@ -240,7 +240,7 @@ p.paraSection1 {
   font-size: 18px;
 }
 
-.prog h2 {
+.prog h3 {
   color: #ff5438;
   font-size: 14.271px;
   font-family: 'Lato', sans-serif;
@@ -470,6 +470,22 @@ p.paraSection1 {
   width: 50px;
 }
 
+.backgrounList {
+  float: left;
+  background-color: #333;
+  color: #fff;
+  margin: 0;
+  padding: 10px;
+}
+
+.menuList ul {
+  float: left;
+  background-color: #fff;
+  color: #333;
+  margin: 0;
+  padding: 10px;
+}
+
 /* Popup styles */
 .popup-container {
   position: fixed;
@@ -654,7 +670,6 @@ p.paraSection1 {
     justify-content: end;
     align-items: center;
     gap: 1.5rem;
-    padding: 0 5px;
     font-size: 16px;
     font-weight: 500;
     margin-bottom: 5px;

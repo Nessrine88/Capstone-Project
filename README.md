@@ -53,8 +53,8 @@ The Prickly Pear Seed Oils Company website offers the following key features:
 We hope this clarifies the nature of the Capstone Project as a Prickly Pear Seed Oils Company website.
 
 ## Acknowledgements <a name="acknowledgements"></a>
+We would like to express our gratitude to [Cindy Shin](https://www.behance.net/adagio07), the author of the original design used for this project. Her [Creative Commons License](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015) allows us to adapt and showcase her design in this capstone project. We appreciate her contribution to the design community.
 
-We would like to express our gratitude to Cindy Shin, the author of the original design used for this project. Her Creative Commons License allows us to adapt and showcase her design in this capstone project. We appreciate her contribution to the design community.
 
 # 🚀 Live Demo <a name="live-demo"></a>
 
