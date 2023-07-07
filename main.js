@@ -176,7 +176,7 @@ const persons = [
 
 const section3 = document.querySelector('.section3');
 
-let displayedPersons = persons.slice(0, 5);
+let displayedPersons = persons.slice(0, 6);
 
 function renderPersons(personsArray) {
   const htmlContent = `

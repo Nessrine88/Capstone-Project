@@ -547,9 +547,7 @@ p.paraSection1 {
   color: #d3d3d3;
 }
 
-.div22 {
-  display: none;
-}
+
 
 @media (min-width: 768px) {
   .div22 {
@@ -684,10 +682,10 @@ p.paraSection1 {
     margin-right: 100px;
   }
 
-  .more {
-    display: none;
+  #more {
+    display: none !important;
   }
-
+  
   .im {
     display: flex;
   }
